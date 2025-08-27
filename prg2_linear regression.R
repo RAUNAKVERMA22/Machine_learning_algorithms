@@ -1,0 +1,6 @@
+data<- read.csv("insurance.csv",stringsAsFactors = FALSE)
+str(data)
+summary(data$charges)
+hist(data$charges)
+table(data$region)
+cor(data[c("age","bmi","children","charges")])
